@@ -1,0 +1,47 @@
+body {
+    font-family: 'Segoe UI';
+    line-height: 1.6px;
+    margin: 20px;
+    background: linear-gradient(45deg,blue, white);
+
+    /* background: radial-gradient(circle,blue, white); */
+
+    /* background: linear-gradient(,blue, white); */
+
+    /* background: linear-gradient(45**DEGREES**,blue, white); */
+
+    /* background: conic-gradient(blue, white); */
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+a{
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+a:link {
+    color: orange;
+}
+a:visited{
+    color: green;
+}
+a:hover {
+    background-color: coral;
+    padding: 10px;
+    border-radius: 10px;
+}
+.link-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #34495e;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10%;
+}´
+.link-topo:hover {
+    background-color: blue;
+    border-radius: 10%;
+}

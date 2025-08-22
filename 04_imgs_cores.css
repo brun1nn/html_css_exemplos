@@ -1,1 +1,18 @@
-/* Digitação (Aqui) */
+h1 {
+
+    text-shadow: 4px 4px 8px black;
+
+}
+img {
+    border: 3px double red;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    /* transform: scale(1.10); */
+    /* transform: rotate(10deg); */
+    transform:translateY(-20px)
+    border-color: black;
+    opacity: 0.3;
+}
