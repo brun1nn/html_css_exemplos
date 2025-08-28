@@ -10,13 +10,36 @@ body {
 h1 {
     text-align: center;
     color: #2c3e50;
-    animation: fadeIn 2s ease-in; /* Animação de entrada */
+    animation: rainbow 2s linear infinite, /* Animação de entrada */
+    rotate3d 2s linear infinite;
 }
 
 /* === KEYFRAMES (ANIMAÇÕES) === */
 
+@keyframes rainbow {
+    o% {color: #ff0000;}
+    16% {color: #ff8000;}
+    33% {color: #ffff00;}
+    5o% {color: #00ff00;}
+    66% {color: #0080ff;}
+    83% {color: #8000ff;}
+    100% {color: #ff0000;}
+}
 
-/* Continuar digitação (Aqui)  */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px)}
+    to {opacity: 1; transform: translateY(0);}
+
+}
+
+/* Rotação do texto */
+@keyframes rotate3d {
+    0% {transform: rotateX(0deg) rotateY(0deg);}
+    25% {transform: rotateX(90deg) rotateY(0deg);}
+    50% {transform: rotateX(90deg) rotateY(90deg);}
+    75% {transform: rotateX(0deg) rotateY(90deg);}
+    100% {transform: rotateX(0deg) rotateY(0deg);}
+}
 
 
 /* === ELEMENTOS DE TEXTO === */
