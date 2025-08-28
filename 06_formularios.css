@@ -15,5 +15,81 @@ h1 {
 
 /* Container do formulário */
 
+.formulario {
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgb(0,0,0,0.2);
+}
 
-/* Continuar digitação (Aqui) */
+label{
+    color: #333;
+    font-weight: bold;
+    /*transforma o elemento "label" em um elemento inline*/
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 14px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    /*Inclui padding (mantendo a largura)*/
+    box-sizing: border-box;
+}
+/*Foco nos campos*/
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none; /*Remove a borda padrão*/
+    border-color: #667eea;
+    background-color: #f8f9ff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/*Permitir redimensionamento somente na vertical*/
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: pointer;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+.btn-enviar {
+    background-color: #27ae60;
+    color: #fff;
+}
+.btn-enviar:hover{
+    background-color: #27ae60;
+    transform: translateY(-2px);
+}
+.btn-limpar {
+    background-color: #e74c4c;
+    color: #fff;
+}
+.btn-limpar:hover{
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
